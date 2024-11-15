@@ -1,0 +1,141 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f9;
+}
+
+.resource-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #333;
+    text-align: center;
+}
+
+/* Custom styling for file input */
+input[type="file"] {
+    display: none; /* Hide the default file input */
+}
+
+label {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s;
+    margin-bottom: 20px;
+}
+
+label:hover {
+    background-color: #0056b3;
+}
+
+/* Styling for buttons */
+button {
+    padding: 10px 15px;
+    margin: 5px;
+    background-color: #007BFF;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Styling the file list */
+#file-list {
+    margin-top: 20px;
+}
+
+.file-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.file-item span {
+    font-size: 16px;
+    color: #555;
+}
+
+.view-btn, .remove-btn {
+    background-color: #28a745;
+}
+
+.view-btn:hover {
+    background-color: #218838;
+}
+
+.remove-btn {
+    background-color: #dc3545;
+}
+
+.remove-btn:hover {
+    background-color: #c82333;
+}
+
+/* Styling the PDF viewer */
+#pdf-viewer {
+    width: 100%;
+    height: 600px;
+    border: none;
+    display: none; /* Hidden by default, shown when a PDF is selected */
+    position: relative; /* Positioned relative for fullscreen button placement */
+}
+
+/* Fullscreen button styling */
+#fullscreen-btn {
+    display: block;
+    margin-top: 20px;
+    background-color: #007BFF;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#fullscreen-btn.exit-fullscreen {
+    background-color: #dc3545;
+}
+
+#fullscreen-btn.exit-fullscreen:hover {
+    background-color: #c82333;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .resource-container {
+        padding: 15px;
+    }
+
+    button {
+        font-size: 12px;
+    }
+
+    .file-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

@@ -1,0 +1,119 @@
+/* videowatch.css */
+.video-container {
+    text-align: center;
+    margin: 20px auto;
+}
+
+.video-controls {
+    display: flex; /* Use Flexbox for alignment */
+    justify-content: center; /* Center the controls */
+    margin-top: 20px;
+}
+
+
+#search-btn {
+    cursor: pointer;
+    font-weight: 700;
+    font-family: Helvetica, "sans-serif";
+    transition: all 0.2s;
+    padding: 10px 20px;
+    border-radius: 100px;
+    background: #8c8080;
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+}
+
+/* Add hover and active states */
+#search-btn:hover {
+    background: #fc0303;
+}
+
+#search-btn svg {
+    width: 24px; /* Adjust the size of the SVG icon */
+    margin-left: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+#search-btn:hover svg {
+    transform: translateX(5px);
+}
+
+#search-btn:active {
+    transform: scale(0.95);
+}
+
+/* CSS for search results box */
+.search-results {
+    list-style: none;
+    padding: 20px; /* Add padding inside the box */
+    margin: 20px auto;
+    max-width: 800px;
+    background: #ffffff; /* White background for the results box */
+    border: 1px solid #ddd; /* Light border around the box */
+    border-radius: 8px; /* Rounded corners for the box */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    overflow: hidden; /* Ensure content stays within the box */
+}
+
+.video-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0; /* Add vertical padding for spacing */
+}
+
+.video-item img {
+    width: 120px;
+    height: 90px;
+    margin-right: 10px;
+}
+
+.video-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.video-info p {
+    font-size: 16px;
+    margin: 0;
+}
+
+.video-info button {
+    padding: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+/* CSS for proper rectangular video player */
+#video-frame {
+    width: 800px; /* Desired width */
+    height: 450px; /* Desired height */
+    max-width: 100%;
+    max-height: 100%;
+    border: none;
+    aspect-ratio: 16 / 9; /* Maintain a 16:9 aspect ratio */
+}
+
+
+/* Rounded search bar */
+#search-query {
+    padding: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+    flex: 1; /* Allow input to take available space */
+    max-width: 300px; /* Limit the width of the input field */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 50px; /* Fully rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    outline: none; /* Remove default outline */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transition for focus effect */
+}
+
+#search-query:focus {
+    border-color: #8c8080; /* Change border color on focus */
+    box-shadow: 0 0 8px rgba(140, 128, 128, 0.5); /* Enhanced shadow on focus */
+}

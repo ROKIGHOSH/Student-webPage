@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+
+.search-container {
+    width: 90%; /* Use percentage for responsive width */
+    max-width: 700px; /* Maximum width for larger screens */
+    margin: 30px auto; /* Reduced top margin to move content up */
+    text-align: center; /* Center content */
+    padding: 20px; /* Add padding for better spacing */
+}
+.search-container h1 {
+    font-size: 2.5em;  /* Increase the font size */
+    font-weight: bold; /* Make the text bold */
+    color: #1f5afe;    /* Set a color that matches the button gradient */
+    margin-bottom: 20px; /* Add some space below the heading */
+    text-align: center; /* Center the text */
+    font-family: 'Arial', sans-serif; /* Set a clean font */
+    text-shadow: 2px 2px 4px #aaaaaa; /* Add a subtle shadow effect */
+}
+
+input {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 15px;
+    overflow: hidden; /* Ensure content does not overflow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+}
+
+/* Button Styles */
+#btn-primary {
+    margin: 1rem auto; /* Center the button */
+    padding: .45rem .75rem;
+    border-radius: 1.5rem;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    display: block; /* Set the button as a block element */
+    background: linear-gradient(#1f5afe, #0f4cf5);
+    color: white;
+    box-shadow: inset 0pt 4pt 3pt -2pt #386fff, 0pt 4pt 5pt -3pt #0009;
+    border-bottom: 2pt solid #083acd;
+    transition: all 0.5s ease;
+}
+
+#btn-primary:hover {
+    border-bottom: 4pt solid #083acd;
+    transform: translateY(-1px); /* Use transform instead of translate */
+}
+
+#btn-primary:active {
+    box-shadow: inset 0pt 4pt 3pt -2pt #386fff, 0pt 4pt 5pt -3pt #0000;
+    border-bottom: 1pt solid #083acd;
+    transform: translateY(0); /* Use transform instead of translate */
+}
+
+iframe {
+    width: 100%; /* Make iframe width responsive */
+    height: 600px; /* Set a fixed height for the iframe */
+    border: none; /* Remove default border */
+    margin-top: 20px; /* Add some space above the iframe */
+}
+
+/* Responsive adjustments for mobile devices */
+@media (max-width: 768px) {
+    .search-container {
+        margin: 50px auto; /* Reduce margin for smaller screens */
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+
+    .search-container h1 {
+        font-size: 2em; /* Reduce font size on smaller screens */
+    }
+
+    #btn-primary {
+        width: 100%; /* Make button take full width on mobile */
+        margin: 0.5rem 0; /* Adjust margin for mobile */
+    }
+
+    iframe {
+        height: 400px; /* Reduce iframe height on smaller screens */
+    }
+}
+
+/* Other button styles */
+#btn-kbd {
+    margin: .5rem;
+    padding: 0.5rem 0.5rem;
+    border-radius: 5rem;
+}
+
+#btn-primary-kbd {
+    background-color: #3e6eff;
+    box-shadow: inset 0pt -3pt 3pt -2pt #1f54f0, inset 0pt 3pt 3pt -2pt #658dff,
+                0pt 2pt 2pt -2pt #0005, 0pt 0pt 0pt 2pt #0d47f0;
+}
+
+#btn-base {
+    background: #386fff;
+}
